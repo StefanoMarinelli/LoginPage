@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+    <center>
+    <form method="POST" th:action="@{/utente/new}" th:object="{User}">
+        <h3>REGISTER</h3>
+        <label>Email</label>
+        <input th:field="*{email}" type="email" >
+        <label>Nickname</label>
+        <input th:field="*{nickname}" type="text">
+        <label>Password</label>
+        <input th:field="*{pwd}" type="password">
+        <input type="submit" value="Invia">
+        <input type="reset" value="Reset">
+    </form>
+    </center>
+    </div>
+</body>
+</html>
