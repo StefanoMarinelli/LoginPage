@@ -8,12 +8,14 @@
 <body>
     <div>
         <center>
-            <form action="/utente/birillo" method="POST" >
-                <h3>LOGIN</h3>
+            <form method="POST" action="/utente/birillo">
+                <h3>REGISTER</h3>
+                <label>Email</label>
+                <input type="email" name="email"> <br>
                 <label>Nickname</label>
-                <input type="text" name="nickname"> <br> <br>
+                <input type="text" name="nickname"> <br>
                 <label>Password</label>
-                <input type="password" name="pwd"> <br> <br>
+                <input type="password" name="pwd"> <br>
 
                 <input type="submit" value="Invia">
                 <input type="reset" value="Reset">
